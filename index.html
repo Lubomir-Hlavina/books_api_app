@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Book App</title>
+</head>
+
+<body>
+    <h1>Manage Your Favorite Books</h1>
+
+    <form id="add-book-form" data-cy="add-form">
+        <input type="text" id="book-title" data-cy="book-title" placeholder="Názov knihy" required />
+        <input type="text" id="book-author" data-cy="book-author" placeholder="Autor" required />
+        <button type="submit" data-cy="submit-button">Pridať knihu</button>
+    </form>
+
+    <h2>Books List</h2>
+    <ul id="book-list" data-cy="book-list"></ul>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
